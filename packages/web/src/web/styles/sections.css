@@ -1,0 +1,406 @@
+.other-collections {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 65px;
+}
+.other-collections-label h2 {
+  margin-top: 7px;
+  font-size: 30px;
+}
+.collection-link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 100px;
+  padding: 18px 20px;
+  border: 1px solid var(--wine-border);
+  border-radius: 6px;
+  background: var(--wine);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.collection-link:hover {
+  border-color: var(--rose);
+  background: var(--wine-hover);
+}
+.collection-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 53px;
+  border: 1px solid var(--wine-border);
+  border-radius: 30px 30px 5px 5px;
+  color: var(--rose);
+}
+.collection-link strong {
+  display: block;
+  font: 500 26px/1.15 var(--font-display);
+}
+.collection-link small {
+  display: block;
+  margin-top: 5px;
+  color: var(--wine-muted);
+  font-size: 13px;
+}
+.collection-link > svg {
+  margin-left: auto;
+  color: var(--muted-foreground);
+}
+.how-section {
+  padding-block: 68px 45px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.centered {
+  text-align: center;
+}
+.buy-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 65px;
+  list-style: none;
+  margin: 44px 50px 15px;
+  padding: 0;
+}
+.step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  border-bottom: 1px solid var(--border-strong);
+}
+.step-icon {
+  color: var(--gold);
+}
+.step-number {
+  color: var(--gold);
+  font: italic 32px/1 var(--font-display);
+}
+.buy-steps h3 {
+  margin-top: 20px;
+  font: 500 27px/1.2 var(--font-display);
+}
+.buy-steps p {
+  margin-top: 11px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.75;
+}
+.payment-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  max-width: 650px;
+  margin: 34px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-strong);
+}
+.payment-info > svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--muted-foreground);
+}
+.payment-methods {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.payment-installments {
+  margin-top: 5px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.how-contact {
+  display: flex;
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: center;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.about-visual {
+  position: relative;
+  max-width: 405px;
+  margin-left: 38px;
+  padding: 12px 12px 40px;
+  border: 1px solid var(--border-strong);
+  border-radius: 180px 180px 8px 8px;
+  background: var(--surface);
+}
+.about-image {
+  overflow: hidden;
+  height: 360px;
+  border-radius: 170px 170px 3px 3px;
+}
+.about-image > .product-photo {
+  height: 100%;
+  aspect-ratio: auto;
+}
+.about-image .product-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  right: 0;
+  color: var(--muted-foreground);
+  font-size: 13px;
+}
+.about-flower {
+  position: absolute;
+  right: -38px;
+  bottom: 35px;
+  color: var(--rose);
+}
+.about-copy h2 {
+  margin-top: 14px;
+  font-size: 49px;
+}
+.about-copy > p {
+  margin-top: 20px;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.8;
+}
+.about-copy > .about-warranty {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--foreground);
+  font-weight: 500;
+}
+.about-warranty > svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--accent);
+}
+.about-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-block: 22px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.about-copy .btn-secondary {
+  font-size: 12px;
+}
+.faq-section {
+  border-top: 1px solid var(--border);
+  padding-block: 65px 72px;
+}
+.faq-layout {
+  display: grid;
+  grid-template-columns: 0.75fr 1.4fr;
+  gap: 90px;
+}
+.faq-heading h2 {
+  margin-top: 13px;
+  font-size: 49px;
+}
+.faq-heading > p {
+  max-width: 270px;
+  margin-top: 18px;
+  color: var(--muted-foreground);
+  font-size: 15px;
+}
+.faq-heading .text-button {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.faq-items details {
+  border-bottom: 1px solid var(--border);
+}
+.faq-items summary {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 67px;
+  padding-block: 15px;
+  list-style: none;
+  font-size: 16px;
+}
+.faq-items summary::-webkit-details-marker {
+  display: none;
+}
+.faq-items summary > svg {
+  flex-shrink: 0;
+  color: var(--muted-foreground);
+  transition: transform 0.2s;
+}
+.faq-items details[open] summary > svg {
+  transform: rotate(180deg);
+}
+.faq-items details > p {
+  padding-bottom: 21px;
+  padding-right: 30px;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.8;
+}
+.final-cta {
+  padding-block: 41px;
+  background: var(--wine);
+}
+.final-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 23px;
+}
+.final-sparkle {
+  color: var(--gold);
+}
+.final-cta-inner > div {
+  flex: 1;
+}
+.final-cta h2 {
+  margin-top: 7px;
+  font-size: 33px;
+}
+.final-cta p {
+  margin-top: 8px;
+  color: var(--wine-muted);
+  font-size: 13px;
+}
+.final-cta .btn-primary {
+  font-size: 12px;
+}
+.site-footer {
+  background: var(--footer);
+  color: var(--foreground);
+}
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1.1fr;
+  gap: 65px;
+  padding-top: 54px;
+  padding-bottom: 44px;
+}
+.brand-light {
+  color: var(--foreground);
+}
+.brand-light .brand-mark {
+  color: var(--gold);
+}
+.brand-light .brand-caption {
+  color: var(--muted-foreground);
+}
+.footer-brand > p {
+  margin-top: 21px;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.footer-made {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 19px;
+  color: var(--rose);
+  font-size: 12px;
+}
+.footer-main h2 {
+  margin-bottom: 16px;
+  color: var(--foreground);
+  font: 400 12px/1.5 var(--font-sans);
+  letter-spacing: 0.03em;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-nav a {
+  min-height: 29px;
+  padding-block: 3px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.footer-nav a:hover,
+.footer-contact a:hover {
+  color: var(--gold);
+}
+.footer-contact > a,
+.footer-contact > p {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 33px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.footer-contact > a {
+  color: var(--gold);
+}
+.footer-contact > span {
+  display: block;
+  margin-top: 15px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.footer-bottom {
+  display: flex;
+  min-height: 64px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.footer-bottom a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+}
+.whatsapp-fab {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 50;
+  right: 23px;
+  bottom: 23px;
+  padding: 12px 16px;
+  min-height: 49px;
+  border: 1px solid var(--success);
+  border-radius: 30px;
+  background: var(--whatsapp);
+  box-shadow: 0 6px 22px var(--shadow-soft);
+  color: var(--whatsapp-foreground);
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.whatsapp-fab span {
+  font-size: 12px;
+}
+.whatsapp-fab:hover {
+  transform: translateY(-2px);
+  background: var(--whatsapp-hover);
+}
