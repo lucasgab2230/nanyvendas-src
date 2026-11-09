@@ -1,0 +1,31 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "npx --yes pnpm@12.6.0 install --filter @template/web... --filter nanyvendas --frozen-lockfile",
+  "buildCommand": "npx --yes pnpm@12.6.0 run build",
+  "outputDirectory": "packages/web/dist",
+  "functions": {
+    "api/index.mjs": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index"
+    },
+    {
+      "source": "/lingerie",
+      "destination": "/lingerie/index.html"
+    },
+    {
+      "source": "/categorias/:slug",
+      "destination": "/categorias/:slug/index.html"
+    },
+    {
+      "source": "/semijoias/:slug",
+      "destination": "/semijoias/:slug/index.html"
+    }
+  ],
+  "trailingSlash": false
+}
